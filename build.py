@@ -45,11 +45,10 @@ def get_author_dict():
         'Benjamin Kellenberger': 'https://bkellenb.github.io',
         'Rui Gong': 'https://scholar.google.com/citations?user=4St8MdYAAAAJ&hl=en',
         'Irena Hajnsek': 'https://scholar.google.de/citations?user=UDDXUBcAAAAJ&hl=de',
-        'Xiaochen Zheng': 'https://xcvil.github.io',
         'Laurence Yang': 'https://scholar.google.ca/citations?user=a39Yz5cAAAAJ&hl=en',
         }
 
-def generate_person_html(persons, connection=", ", make_bold=True, make_bold_name='Michael Niemeyer', add_links=True):
+def generate_person_html(persons, connection=", ", make_bold=True, make_bold_name='Xiaochen Zheng', add_links=True):
     links = get_author_dict() if add_links else {}
     s = ""
     for p in persons:
