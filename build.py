@@ -76,6 +76,8 @@ def get_paper_entry(entry_key, entry):
     else:
         if 'html' in entry.fields.keys():
             s += f"""<a href="{entry.fields['html']}" target="_blank">{entry.fields['title']}</a> <br>"""
+        else:
+            s += f"""<a href="{entry.fields['pdf']}" target="_blank">{entry.fields['title']}</a> <br>"""
 
     s += f"""{generate_person_html(entry.persons['author'])} <br>"""
     s += f"""<span style="font-style: italic;">{entry.fields['booktitle']}</span>, {entry.fields['year']} <br>"""
