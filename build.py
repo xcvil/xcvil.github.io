@@ -188,6 +188,13 @@ def get_index_html():
                 <!-- {talks} -->
             <!-- </div> -->
         <!-- </div> -->
+        <div class="row" style="margin-top: 1em;">
+            <div class="col-sm-12" style="">
+                <h4>Supervision</h4>
+                <p>Xingyu Chen (2022 - 2023), master student at ETH Zurich.</p>
+                <p>Richard Affolter (2022 - 2023), master student at ETH Zurich.</p>
+            </div>
+        </div>
         <div class="row" style="margin-top: 3em; margin-bottom: 1em;">
             {footer}
         </div>
