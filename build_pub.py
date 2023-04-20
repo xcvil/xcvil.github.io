@@ -46,6 +46,7 @@ def get_author_dict():
         'Rui Gong': 'https://scholar.google.com/citations?user=4St8MdYAAAAJ&hl=en',
         'Irena Hajnsek': 'https://scholar.google.de/citations?user=UDDXUBcAAAAJ&hl=de',
         'Laurence Yang': 'https://scholar.google.ca/citations?user=a39Yz5cAAAAJ&hl=en',
+        'Amina Mollaysa': 'https://scholar.google.ch/citations?user=135piYQAAAAJ&hl=en',
         }
 
 def generate_person_html(persons, connection=", ", make_bold=True, make_bold_name='Xiaochen Zheng', equal_contri='Xiaochen Zheng', add_links=True):
@@ -221,10 +222,10 @@ def get_index_html():
 
 
 def write_index_html(filename='index.html'):
-    s = get_index_html()
+    s = get_publications_html()
     with open(filename, 'w') as f:
         f.write(s)
     print(f'Written index content to {filename}.')
 
 if __name__ == '__main__':
-    write_index_html('index.html')
+    write_index_html('pub.html')
